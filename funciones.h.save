@@ -1,0 +1,134 @@
+
+#ifndef __metodos__
+#define __metodos__
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <vector>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iterator>
+#include <algorithm>
+#include <numeric>
+#include <list>
+#include <deque>
+#include <set>
+#include <map>
+//#include <windows.h>
+using namespace std;
+
+void eliminar_posiciones(){
+
+
+	vector<int> numeros;
+	/*metodos para ingresar*/
+
+	for(int i=0; i<20; i++){
+
+		numeros.push_back(i);
+	}
+
+	/*impresion de los datos*/
+	for(int i=0; i< numeros.size();i++){
+
+		cout<<numeros[i]<<"|";
+	}
+
+	cout<<endl;
+
+	numeros.erase(numeros.begin() + 1, numeros.begin() + 3);
+	for (int i = 0; i < numeros.size(); i++) {
+
+		cout << numeros[i] << "|";
+	}
+
+	cout<<"\n";
+}
+
+void contenedor_cola(){
+
+	deque<char> letra;
+
+	letra.push_back('A');
+	letra.push_back('B');
+	letra.push_back('C');
+	letra.push_back('D');
+	letra.push_back('E');
+	letra.push_back('F');
+	letra.push_back('G');
+
+	for(int i=0; i<letra.size();i++){
+
+		cout<<letra[i]<<"|";
+	}
+
+	cout<<endl;
+
+	letra.pop_front();
+	letra.pop_back();
+
+	for(int i=0; i<letra.size();i++){
+
+                cout<<letra[i]<<"|";
+        }
+
+        cout<<endl;
+}
+
+void contenedor_lista(){
+
+
+	list<int> data;
+	list<int> dato;
+	for(int i=0; i<50;i++){
+
+		data.push_front(i);
+	}
+
+	list<int>::iterador i;
+	i=data.begin();
+
+	while(i!=dao for(int i=0; i<50;i++){
+
+                data.push_front(i);
+        }
+
+        list<int>::iterador i;
+        i=data.begin();
+
+        while(i!=datos.end()){
+
+                cout<<*i<<"|"
+                i++;
+        }
+
+        cout<<endl;
+.end()){
+
+		cout<<*i<<"|"
+		i++;
+	}
+
+	cout<<"\n\n";
+
+
+	for(int i=0; i<50;i++){
+
+                dato.push_back(i);
+        }
+
+        list<int>::iterador j;
+        j=dato.begin();
+
+        while(i!=dato.end()){
+
+                cout<<*i<<"|"
+                i++;
+        }
+
+        cout<<endl;
+
+
+}
+#endif
