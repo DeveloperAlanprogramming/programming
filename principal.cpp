@@ -18,8 +18,8 @@ using namespace std;
 
 int main(){
 
-	//eliminar_posiciones();
-	//contenedor_cola();
+	eliminar_posiciones();
+	contenedor_cola();
 	contenedor_lista();
 	return 0;
 }
